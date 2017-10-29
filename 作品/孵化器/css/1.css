@@ -1,0 +1,100 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,li,hr,span,img,i{margin: 0; padding: 0;}
+a{text-decoration: none;}
+ul,li{list-style: none;}
+h1{font-size: 18px;border-bottom: 1px solid #cecece;padding-bottom: 8px;}
+h1 span{color: #9a9a9a}
+input {border: 0;background: none;outline: none;}
+body{background: url("../images/bg.png") repeat-x;}
+
+.box{width: 1200px;margin: 0 auto;overflow:hidden;}
+
+.top{height: 104px;clear:both;}
+.top img{float:left;}
+.login{float: right;width:300px;}
+.login ul li{float: left;font-size: 15px;margin-top: 45px;}
+.login ul li a{color: #6C6E71;}
+.user{background: url("../images/user.png") no-repeat;padding-left: 25px;}
+.login ul li span{color: #6C6E71;margin-left: 5px;margin-right: 5px;}
+.logout{width: 65px;height: 33px;background: #f18b33;cursor: pointer;font-size: 15px;border-radius: 3px;margin-top: -15px;margin-left:16px;color: #ffffff;}
+/*菜单*/
+.menu{height: 70px;}
+.menu ul li{float: left;width: 125px;height: 70px;text-align:center;color: #f7fafc;transition:0.5s;cursor: pointer;}
+.menu ul li:hover{background: orange;}
+.item{height: 55px;padding-top: 15px;}
+.triangle-down{width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 6px solid #f7fafc;position: relative;top:15px;left: 1px;}
+.item span{display: block;}
+.menu .en{font-size: 12px;}
+.sub_menu{display: none;position: relative;}
+.sub_menu p{color: #f7fafc;float: left;width: 125px;}
+.sub_menu a{display: block;width: 125px;height: 40px;line-height:40px;background: rgba(51,109,210,0.8);margin-top: 1px;transition:0.5s;}
+.sub_menu a:hover{background: rgba(255,165,0,0.8);}
+
+.main{margin-top: 15px;height: 1190px;}
+/*园区新闻*/
+.news{width: 770px;height: 370px;float: left;}
+.choice ul li{width: 150px;height: 60px;float:left;background: rgba(47,100,192,0.2);text-align: center;line-height: 60px;border: 1px solid #b8cfe3;border-radius: 5px;margin-right: 27px;}
+.choice ul li:hover{background: rgba(47,100,192,0.5);}
+.choice ul li a{color: #3065c0}
+.tab{width: 770px;height:33px;border-bottom: 1px solid #d9d9d9;line-height: 33px;font-size: 18px;font-weight: bold;}
+.tab ul li{float: left;margin-right: 40px;}
+.tab .select{border-bottom: 3px solid #2f64c0;color: #2f64c0;}
+.caption{height: 240px;margin-top: 2px;overflow:hidden;}
+.caption img{float: left;margin-top: 20px}
+.caption span{float: left;color: #232323;margin-top: 15px}
+.caption ul{float: right;width: 450px;margin-top: 20px;}
+.caption ul li{line-height: 30px;}
+.caption ul li a{color: #414141;}
+.caption ul li a:hover{color: #ff0000;}
+/*园区活动*/
+.activities{width: 400px;float: right;}
+.activity{margin-bottom: 25px;margin-top: 22px;}
+.content{width: 280px;height: 90px;float: right;}
+.content a{font-size: 16px;color: #404040;}
+.content p{color: #a0a0a0;font-size: 14px;}
+/*园区巡礼*/
+.tour{width: 440px;float: left;}
+.tour ul li{overflow:hidden;float:left;margin-left:5px;margin-top: 14px;}
+.tour ul li img{transition:1s;overflow:hidden}
+.tour ul li:hover img{transform:scale(1.2,1.2);-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2);-ms-transform:scale(1.2,1.2);-o-transform:scale(1.2,1.2);}
+.tour1{width:295px;height:230px;}
+.tour2{width:130px;height:108px;}
+.tour3{width:130px;height:108px;}
+.tour4{width:150px;height:108px;margin-right: 5px}
+.tour5{width:130px;height:108px;margin-right: 5px}
+.tour6{width:130px;height:108px;}
+/*银江介绍*/
+.brief{width: 295px;height: 390px;background: #f4f4f4;float: left;margin-left: 15px;margin-top: 10px;}
+.article{margin:20px 15px 0 15px;}
+.article h2{font-size:17px;color: #404040;font-weight: normal;}
+.article p{font-size: 14px;margin-top: 15px;line-height: 30px;color: #666666;}
+.more{text-align: right;}
+.more a{font-size: 14px;color: #d7393e;}
+/*银江模式*/
+.model{float: right;width: 400px;}
+.ms{float: left;width: 97px;margin:30px 0 15px 27px;}
+.ms img{transition:2s;}
+.ms:hover img{-webkit-transform:rotateY(360deg) ;-moz-transform:rotateY(360deg) ;-ms-transform:rotateY(360deg) ;-o-transform:rotateY(360deg) ;transform: rotateY(360deg);}
+.ms a{display: block;text-align: center;color: #2a2a2a;}
+.ms a:hover{color: #ff0000;}
+/*企业服务*/
+.services{width: 1200px;float: left;}
+.service{float: left;margin-left: 33px;margin-top: 20px;width: 200px;}
+.service img{transition:0.5s}
+.service:hover img{transform:scale(1.1,1.1);-webkit-transform:scale(1.1,1.1);-moz-transform:scale(1.1,1.1);-ms-transform:scale(1.1,1.1);-o-transform:scale(1.1,1.1);}
+.service .s1{border-bottom: 1px dashed #dedede;height: 46px;line-height: 46px;}
+.service .s1 a{color: #232323;}
+.service .s1 a:hover{color: #ff0000;}
+.service span{line-height: 36px;font-size: 14px}
+.service span strong{color: #ff6917;font-size: 17px;}
+.explain{color: #a2a2a2;font-size: 14px;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;}
+/*脚注*/
+.footer{height: 165px;}
+.footer ul{height: 41px;width: 830px;margin: 0 auto;}
+.footer ul li{float: left;font-size: 15px;line-height: 41px;width: 103px;}
+.footer ul li a{color: #fbfcfe;margin-left: 18px;margin-right: 18px;}
+.footer ul li a:hover{color: #ff0000;}
+.footer ul li span{color: #fbfcfe;}
+.bottom{margin-top: 15px;}
+.info{float: left;}
+.info p{color: #757575;font-size: 14px;line-height: 25px;}
+.weixin{float: right;font-size: 7px;width: 76px;text-align: center;}

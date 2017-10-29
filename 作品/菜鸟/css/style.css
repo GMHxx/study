@@ -1,0 +1,82 @@
+body,div,ul,h1,h2,h3,h4,h5,h6,textarea,p,th,td,button{margin:0;padding:0;}
+img{border: none;}
+li{list-style: none;}
+input[type=button]:hover{cursor: pointer;color:orange;}
+body{background: url(../images/bg.png) repeat-x;}
+/*居中*/
+.bird{width:990px;margin: 0 auto;}
+
+.top{width: 990px;height:98px;background: url(../images/header.png) no-repeat;position: relative;}
+.top a{position: absolute;top:20px;padding-left: 27px;text-decoration: none;color:#44b944;font-size: 12px;}
+.top a:hover{color:orange;}
+.top span{position: absolute;top:20px;right:129px;color:#44b944;font-size: 12px;}
+.top #a1{background: url(../images/China.png) no-repeat 0 2px;right:150px;}
+.top #a2{background: url(../images/UK.png) no-repeat 0 2px;right:40px;}
+
+.menu{width: 994px;}
+.menu ul{width:994px;height: 47px;background: url(../images/menu_bg.png) no-repeat;}
+.menu ul li{width:108px;height: 47px;float: left;text-align: center;line-height: 50px;}
+.menu ul li a{width:108px;height: 47px;text-decoration: none;color:#ffffff;display: block;}
+.menu ul li a:hover{width:119px;color:orange;background: url(../images/menu.png) no-repeat;}
+
+.main_top{width: 990px;height: 354px;position: relative;overflow: hidden;}
+.main_top ul{width: 3960px;position: absolute;left: 0;top: 0;}
+.main_top ul li{width: 990px;height: 354px;float: left;}
+.main_top input{width: 52px;height: 52px; border: none;position: absolute;top:150px;}
+.main_top #LeftBtn{background: url(../images/left.png) no-repeat;left: 2px;display: none;}
+.main_top #RightBtn{background: url(../images/right.png) no-repeat;right: 2px;display: none;}
+.main_top #buttonL{width: 485px;height: 354px;position: absolute;left: 0;;top:0;}
+.main_top #buttonR{width: 485px;height: 354px;position: absolute;right: 0;top:0;}
+
+.main{width: 990px;overflow: hidden;position: relative;}
+.main .center{width: 992px;height: 61px;background: url(../images/center.png) no-repeat;}
+.main .center input{height:22px;border: none;margin-top: 20px;}
+.main .center #LeftText{width:137px;background: url(../images/login1.png) no-repeat;padding-left: 3px;margin:0 10px 0 155px;color: #848484}
+.main .center #RightText{width:108px;background: url(../images/login2.png) no-repeat;padding-left: 32px;}
+.main .center #Login{width: 45px;height:24px;background: url(../images/login3.png) no-repeat;color:#ffffff; margin: 0 5px 0 5px;}
+.main .center #Login:hover{color:orange;}
+.main .center a{text-decoration: none;font-size: 12px;color:#4a4a4a;}
+.main .center ul{width: 215px;position: absolute;right: -192px;top:25px;}
+.main .center ul li{float: left;margin-left: 4px;}
+.main .center ul li p{font-size: 12px;color:#178c17;}
+
+.main .more{width:50px;height:16px;border-radius: 5px;border: 1px #bababa solid;font-size: 10px;color:#929292;background: transparent;text-align: center;line-height: 12px;}
+.main .profile{width: 296px; background:url(../images/profile.png) no-repeat;float: left;}
+.main .profile .more1{margin: 37px 5px 40px 230px;}
+.main .profile img{float: left;margin-right: 5px;}
+.main .profile p{font-size: 12px;color:#4a4a4a;text-indent:2em;line-height: 25px;margin-right: 5px;}
+
+.main .news{width: 400px;height:255px;background:url(../images/news.png) no-repeat;float: left;}
+.main .news .more2{margin: 37px 5px 40px 330px;}
+.main .news img{float: left;margin:0 15px 0 15px;}
+.main .news p{color:#50b540;font-weight: 800;font-size: 14px;margin-bottom: 10px;}
+.main .news span{color:#a8a8a8;font-size: 12px;line-height: 24px;}
+.main .news a{color:#50b540;font-size: 12px;}
+.main .news ul{width: 340px;margin:10px 0 0 45px;}
+.main .news ul li{width: 340px;position: relative;list-style-image: url(../images/icon.png)}
+.main .news ul li a{color:#6c6c6c;text-decoration: none;}
+.main .news ul li a:hover{text-decoration: underline;}
+.main .news ul li span{color:#ababab;position: absolute;right: 0;}
+
+.main .contact{width: 282px;height:256px;background:url(../images/contact.png) no-repeat;float: left;}
+.main .contact ul{width: 210px;margin:90px 0 0 50px;}
+.main .contact ul li{width: 210px;height: 35px;}
+.main .contact ul li span{color:#ababab;font-size: 12px;}
+
+.show{width:990px;height: 270px;position: relative;}
+.show .hat{width: 990px;height: 58px;background: url(../images/show.png) no-repeat;position: relative;}
+.show .hat input{width: 25px;height: 25px;border: none;top:20px;position: absolute;}
+.show .hat .LeftB{background: url(../images/leftb.png) no-repeat;right:50px; }
+.show .hat .RightB{background: url(../images/rightb.png) no-repeat;right: 20px;}
+.wrap{width: 950px;height: 210px;position: relative;overflow: hidden;}
+.show ul{width: 1600px;height:210px;position: absolute;left:0;}
+.show ul li{width:190px;float: left;text-align: center;}
+.show ul li a{color:#ababab;font-size: 12px;text-decoration: none;}
+.show ul li a:hover{color: #ff0000;}
+
+.footer{width:100%;height:91px;background: url(../images/footerbg.png) repeat-x;}
+.foot{width:990px;height:91px;text-align: center;margin:0 auto;background: url(../images/footer.png) no-repeat;}
+.foot p{color:#ffffff;padding: 20px 0 5px 0;font-size: 12px;}
+.foot span{color:#ffffff;font-size: 12px;margin: 0 7px 0 7px;}
+.foot a{color:#ffffff;text-decoration: none;}
+.foot a:hover{text-decoration: underline;}
