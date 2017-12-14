@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clone</title>
+</head>
+<body>
+<script>
+    //数组深度克隆
+    // 方法1（arr.slice(start,end)）
+    var arr=["one","two","three","aaa","bbb","ccc"];
+    var clonearr=arr.slice(0,3);
+    clonearr.push("four","five","six");
+    console.log(arr);
+    console.log(clonearr);
+
+    // 方法2(arr.concat(arr2)将两个数组连接，并返回)
+    var arr2=[1,2,3,4,5,6];
+    var clonearr2=[0];
+    clonearr2=arr2.concat(clonearr2);
+    console.log(arr2);
+    console.log(clonearr2);
+
+    //对象深度克隆
+    var obj={name:"Peter",age:21,job:"web",father:{name:"John",age:45}};
+    var copy=function (objX) {
+        var cloneobj={};
+        for(var i in objX){
+            cloneobj[i]= typeof objX[i]==="object"? copy(objX[i]):objX[i];
+        }
+        return cloneobj;
+    }
+    var copyobj=copy(obj);
+    console.log(copyobj);
+
+</script>
+</body>
+</html>
