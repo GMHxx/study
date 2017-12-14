@@ -1,0 +1,18 @@
+Error: Could not fork child process: Resource temporarily unavailable (-1). 
+DLL rebasing may be required; see ‘rebaseall / rebase –help’.
+
+问题现象 ： 在安装Git64位后，运行gitbash一直报错，failed to fork child process no such file or directory，dll rebasing may be required
+
+具体是进入Git安装目录
+
+如C:\Program Files\Git\usr\bin
+
+将 msys-2.0.dll拷贝到上一级目录，
+
+然后使用CMD在原来的usr\bin目录下执行下面命令
+
+rebase -b 0x76000000 ..\msys-2.0.dll
+
+rebase -b 0x30000000 ..\msys-2.0.dll
+
+然后再拷贝回去替换这个DLL文件
