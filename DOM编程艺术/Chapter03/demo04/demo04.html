@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping list</title>
+</head>
+<body>
+<h1>What to buy</h1>
+<p title="a gentle reminder">Don't forget to buy this stuff.</p>
+<ul id="purchases">
+    <li>A tin of beans</li>
+    <li class="sale">Cheese</li>
+    <li class="sale important">Milk</li>
+</ul>
+<script type="text/javascript">
+    var paras=document.getElementsByTagName("p");
+    for(var i=0;i<paras.length;i++){
+        var title_text=paras[i].getAttribute("title"); //获取数组第i个元素的title属性值
+        if(title_text){
+            alert(title_text);
+            paras[i].setAttribute("title","brand new title text");  //覆盖title属性值
+            alert(paras[i].getAttribute("title"));
+        }
+    }
+    var shopping=document.getElementById("purchases");
+    alert(shopping.getAttribute("title"));
+    shopping.setAttribute("title","a list of goods");  //创建title属性并赋值
+    alert(shopping.getAttribute("title"));
+</script>
+</body>
+</html>

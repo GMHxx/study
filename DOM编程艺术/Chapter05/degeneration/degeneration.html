@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <script type="text/javascript" src="js/openWindow.js"></script>
+    <title>平稳退化</title>
+</head>
+<body>
+
+<!--使用“javascript:”伪协议，较老或禁用JavaScript的浏览器不支持（不符合平稳退化）-->
+<a href="javascript:popUp('http://www.baidu.com/');">Example_1</a>
+
+<!--#只是为了创建一个空链接，实际操作由onclick事件处理函数完成，禁用JavaScript的浏览器不支持（不符合平稳退化）-->
+<a href="#" onclick="popUp('http://www.baidu.com/');return false;">Example_2</a>
+
+<!--在href中添加真实链接以解决禁用JavaScript的问题（符合平稳退化）-->
+<a href="http://www,baidu.com/" onclick="popUp('http://www.baidu.com/');return false;">Example_3</a>
+
+<!--使用this简化代码-->
+<a href="http://www.baidu.com/" onclick="popUp(this.href);return false;">Example_4</a>
+</body>
+</html>

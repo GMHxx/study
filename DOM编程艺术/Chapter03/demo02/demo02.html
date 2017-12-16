@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping list</title>
+</head>
+<body>
+<h1>What to buy</h1>
+<p title="a gentle reminder">Don't forget to buy this stuff.</p>
+<ul id="purchases">
+    <li>A tin of beans</li>
+    <li class="sale">Cheese</li>
+    <li class="sale important">Milk</li>
+</ul>
+<script type="text/javascript">
+    var shopping=document.getElementById("purchases");  //获得id为purchase的一个对象
+    //alert(typeof document.getElementById("purchases"));
+    var items=document.getElementsByTagName("li");      //获得标签名为li的元素的数组
+    for(var i=0;i<items.length;i++){
+        alert(typeof(items[i]));
+    }
+    var sales=shopping.getElementsByClassName("sale");  //获得类名为sale的元素的数组
+    alert(sales.length);
+</script>
+</body>
+</html>

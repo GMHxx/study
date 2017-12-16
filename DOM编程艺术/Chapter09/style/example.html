@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Example</title>
+    <script type="text/javascript">
+        window.onload=function(){
+            var para=document.getElementById("example");
+            //alert(typeof(para.nodeName));
+            //style属性是一个对象
+            //alert(typeof(para.style));
+            //alert("The color is "+para.style.color);
+            //alert("The font family is "+para.style.fontFamily);
+
+            //属性值必须加引号，否则为变量
+            para.style.color="black";
+            para.style.fontSize="2em";
+        }
+    </script>
+</head>
+<body>
+<p id="example" style="color: gray;font-family: 'Arial',sans-serif;">
+    An example of paragraph
+</p>
+</body>
+</html>
