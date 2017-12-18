@@ -22,12 +22,12 @@
     <favorites_list name="DOM例子" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="global.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter12/develop/js/global.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="450" column="1" lean-forward="true" selection-start-line="450" selection-start-column="1" selection-end-line="450" selection-end-column="1" />
+            <state relative-caret-position="23">
+              <caret line="450" column="1" lean-forward="false" selection-start-line="450" selection-start-column="1" selection-end-line="450" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -108,7 +108,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="last_opened_file_path" value="E:/webProject" />
+    <property name="last_opened_file_path" value="E:/webProject/面试/angularJs/利息计算" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -149,11 +149,12 @@
       <workItem from="1513431432449" duration="1041000" />
       <workItem from="1513478913512" duration="358000" />
       <workItem from="1513514220963" duration="21000" />
+      <workItem from="1513573718965" duration="25000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1420000" />
+    <option name="totallyTimeSpent" value="1445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -195,6 +196,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Chapter12/develop/js/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter06/galleryUpdate4.0/js/shoePic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -419,8 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter12/develop/js/global.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="450" column="1" lean-forward="true" selection-start-line="450" selection-start-column="1" selection-end-line="450" selection-end-column="1" />
+        <state relative-caret-position="23">
+          <caret line="450" column="1" lean-forward="false" selection-start-line="450" selection-start-column="1" selection-end-line="450" selection-end-column="1" />
           <folding />
         </state>
       </provider>

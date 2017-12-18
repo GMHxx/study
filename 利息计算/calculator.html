@@ -9,24 +9,26 @@
 <div ng-app="myApp" ng-controller="myCalculator">
     <p>
         <label for="money">购买金额：</label>
-        <input id="money" type="text" ng-model="money" />
+        <!--type="number"限制输入必须为数字-->
+        <input id="money" type="number" ng-model="money" />
         <span>RMB</span>
     </p>
     <p>
         <label for="buyTime">购买期限：</label>
-        <input id="buyTime" type="text" ng-model="buyTime" />
+        <input id="buyTime" type="number" ng-model="buyTime" />
         <span>月</span>
     </p>
     <p>
         <label for="myRate">年化利率：</label>
-        <input id="myRate" type="text" ng-model="myRate" />
+        <input id="myRate" type="number" ng-model="myRate" />
         <span>%</span>
     </p>
     <p>
         <label for="summation">每月增持：</label>
-        <input id="summation" type="text" ng-model="summation" />
+        <input id="summation" type="number" ng-model="summation" />
         <span>RMB</span>
     </p>
+    <!--使用筛选器输出货币格式数据-->
     <p>利息：{{sumRate|currency:"￥"}}</p>
     <p>本息：{{sum|currency:"￥"}}</p>
 </div>
@@ -38,35 +40,20 @@
         $scope.money=0;
         $scope.myRate=0;
         $scope.buyTime=0;
-        var sumMoney;
+        // 设置计时器
         setInterval(function () {
+            // $apply()触发脏检查
             $scope.$apply(function () {
                 var trueRate=$scope.myRate/100/12;
-                var allMoney=parseInt($scope.money);
-                var addMoney=parseInt($scope.summation);
-                if(addMoney==null) {
-                    addMoney = 0;
-                }
-                if(allMoney==null){
-                    allMoney=0;
-                }
+                var allMoney=$scope.money;
+                var addMoney=$scope.summation;
                 var allRate=$scope.money*$scope.buyTime*trueRate;
                 for(var i=$scope.buyTime-1;i>0;i--) {
                     allRate = allRate + addMoney * i * trueRate;
                     allMoney = allMoney + addMoney;
                 }
-                sumMoney=allMoney+allRate;
-                if(!allMoney){
-                    $scope.sumRate=0
-                }else {
-                    $scope.sumRate=allRate;
-                }
-                if(!sumMoney){
-                    $scope.sum=0;
-                }else {
-                    $scope.sum=sumMoney;
-                }
-
+                $scope.sumRate=allRate;
+                $scope.sum=allMoney+allRate;
             });
         },100);
     });
