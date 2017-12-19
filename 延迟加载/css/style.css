@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+
+.container{
+    width: 250px;
+    margin: 0 auto;
+}
+
+.box1{
+    height: 2000px;
+    border: 1px solid red;
+}
+
+.box2{
+    height: 2000px;
+    border: 1px solid blue;
+}

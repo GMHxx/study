@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>图片延迟加载</title>
+</head>
+<body>
+<div class="container">
+    <img src="images/drummer.gif" alt="图片1" />
+    <div class="box1"></div>
+    <img class="lazy" src="images/loading.gif" alt="images/guitarist.gif" />
+    <div class="box2"></div>
+    <img class="lazy" src="images/loading.gif" alt="images/lineup.gif" />
+</div>
+
+<script>
+    var temp=-1;
+    // 添加滚动事件
+    window.onscroll=function () {
+        var images=document.getElementsByTagName("img")
+        var lazyImg=new Array();
+        var j=0;
+        for(var i=0;i<images.length;i++){
+            if(images[i].className=="lazy"){
+                lazyImg[j]=images[i];
+                j++;
+            }
+        }
+        var nowTop;
+        var nowHeight;
+        // 获取滚动条高度
+        nowTop=document.documentElement.scrollTop ? document.documentElement.scrollTop:document.body.scrollTop;
+        // 获取窗口可视高度
+        nowHeight=document.documentElement.clientHeight ? document.documentElement.clientHeight:document.body.clientHeight;
+        // 检测是否向下滚动
+        if(temp<nowTop){
+            for(var k=0;k<lazyImg.length;k++){
+                // 获取当前图片纵坐标
+                var imgTop=lazyImg[k].offsetTop;
+                if((imgTop-nowTop)<=nowHeight){
+                    lazyImg[k].src=lazyImg[k].alt;
+                    lazyImg[k].className="loaded";
+                    // console.log(k);
+                }
+            }
+            temp=nowTop;
+        }
+    }
+</script>
+</body>
+</html>
