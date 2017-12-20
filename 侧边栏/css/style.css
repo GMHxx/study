@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0;}
+
+.main{
+    width: 600px;
+    height: 5000px;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+.sidebar{
+    width: 100px;
+    height: 200px;
+    float: right;
+    margin-top: 100px;
+    border: 1px solid red;
+    background-color: yellow;
+    position: relative;
+    zoom: 1;
+}
+
+.sidebar:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}

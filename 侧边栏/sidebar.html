@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>侧边栏</title>
+</head>
+<body>
+<div class="main">
+<div class="sidebar" id="sidebar"></div>
+</div>
+
+<script>
+    var sidebar=document.getElementById("sidebar");
+    // 滚动触发
+    window.onscroll=function () {
+        // 获取滚动条高度
+        var nowScroll=document.documentElement.scrollTop;
+        // 跟随移动（需要相对定位）
+        sidebar.style.top=nowScroll+'px';
+    }
+</script>
+</body>
+</html>
