@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../bootstrap3/css/bootstrap.min.css" />
+    <style type="text/css">
+        .orderColor{
+            color: red;
+        }
+    </style>
+    <title>产品列表</title>
+</head>
+<body ng-app="product">
+<div class="container" ng-controller="productController">
+    <nav class="navbar navbar-default" role="navigation">
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" ng-model="search.name" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </nav>
+<table class="table">
+    <thead>
+    <tr>
+        <th ng-click="changeOrder('id')" ng-class="{dropup:order==='' && orderType==='id'}">
+            产品编号
+            <span ng-class="{orderColor:orderType==='id'}" class="caret"></span>
+        </th>
+        <th ng-click="changeOrder('name')"  ng-class="{dropup:order==='' && orderType==='name'}">
+            产品名称
+            <span ng-class="{orderColor:orderType==='name'}" class="caret"></span>
+        </th>
+        <th ng-click="changeOrder('price')"  ng-class="{dropup:order==='' && orderType==='price'}">
+            产品价格
+            <span ng-class="{orderColor:orderType==='price'}" class="caret"></span>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="product in productData | filter:search | orderBy:order+orderType">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price | currency:"￥"}}</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+<script type="text/javascript" src="../angularjs/angularjs.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
