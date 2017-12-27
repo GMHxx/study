@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+</head>
+<body>
+<div id="countdown1"></div>
+<script>
+    function showTime(endYear,endMonth,endDay,ObjId) {
+        var now=new Date();
+        /*
+        月份索引从0开始
+        使用该格式会多一个月
+        使用new Date("2018/1/1")格式更合适
+        */
+        var endTime=new Date(endYear,endMonth-1,endDay);
+        // getTime方法计算距离1970年1月1日的毫秒数
+        var timeCount=endTime.getTime()-now.getTime();
+        // 获取时间跨度（秒）
+        var secondCount=parseInt(timeCount/1000);
+        // Math.floor()方法：向下取整
+        var day=Math.floor(secondCount/(60*60*24));
+        var hour=Math.floor((secondCount-day*24*60*60)/3600);
+        var minute=Math.floor((secondCount-day*24*60*60-hour*60*60)/60);
+        var second=Math.floor(secondCount-day*24*60*60-hour*3600-minute*60);
+
+        var showTime=document.getElementById(ObjId);
+        showTime.innerHTML="距离"+endYear+"年"+endMonth+"月"+endDay+"日还有："+day+"天"+hour+"小时"+minute+"分"+second+"秒";
+    }
+
+    window.setInterval(function () {
+        showTime(2018,1,1,"countdown1");
+    },1000);
+</script>
+</body>
+</html>
